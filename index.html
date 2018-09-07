@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<title>VideoKen Dahsboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="slider.css">
+<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="flexslider.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" property="stylesheet">
+  <script src="slider.js"></script>
+<style>
+.mySlides {display:none;}
+.flexslider{
+  background: transparent;
+  border: none;
+  margin: 0;
+}
+.flexslider .slides{
+  min-height: inherit;
+  width: 1000%;
+}
+.flex-direction-nav .flex-next{
+  right: 0;
+  background-color: #fff !important;
+  padding: 8px 12px;
+
+}
+.flex-direction-nav .flex-prev{
+  left: 0;
+  background-color: #fff !important;
+  padding: 7px 14px;
+}
+.flex-direction-nav .fa{
+  padding: 6px 4px;
+}
+.flex-prev .fa{
+  padding: 6px 0;
+}
+.flexslider:hover .flex-direction-nav .flex-next, .flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 1;
+}
+.flex-direction-nav a.flex-next:before, .flex-direction-nav a:before, .flex-direction-nav a:before{
+  content: none;
+}
+.flex-direction-nav a{
+  opacity: 1;
+  background-color: #fff !important;
+  border-radius: 100%;
+}
+.flexslider .slides > li{
+  display: block !important;
+  float: left;
+}
+.flex-control-nav, .flex-pauseplay {
+    display: none;
+}
+</style>
+<body>
+<div class="preLoader">
+<div class="sk-folding-cube">
+  <div class="sk-cube1 sk-cube"></div>
+  <div class="sk-cube2 sk-cube"></div>
+  <div class="sk-cube4 sk-cube"></div>
+  <div class="sk-cube3 sk-cube"></div>
+</div>
+</div>
+<header>
+  <a href="#main-menu"
+     role="button"
+     id="main-menu-toggle"
+     class="menu-toggle"
+     aria-expanded="false"
+     aria-controls="main-menu"
+     aria-label="Open main menu">
+
+    <span class="sr-only">Open main menu</span>
+    <span class="fa fa-bars" aria-hidden="true"></span>
+  </a>
+  
+  <nav id="main-menu" role="navigation" class="main-menu" aria-expanded="false" aria-label="Main menu">
+    <a href="#main-menu-toggle"
+       role="button"
+       id="main-menu-close"
+       class="menu-close"
+       aria-expanded="false"
+       aria-controls="main-menu"
+       aria-label="Close main menu">
+
+      <span class="sr-only">Close main menu</span>
+      <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#"><button type="button" class="btn btn-danger">Request Demo</button></a></li>
+    </ul>
+  </nav>
+  <a href="#main-menu-toggle"
+     class="backdrop"
+     tabindex="-1"
+     aria-hidden="true" hidden></a>
+</header>
+
+
+<div class="videoken-content videoken-display-container" id="videoken-content">
+
+<div class="videoken-display-container mySlides slide1">
+  <div class="embedYTVideo  embed-banner embed-home embed-responsive embed-responsive-1by1" style="width:100%;position: relative;height: 0px;padding-bottom: 56.25%;overflow: hidden;">
+    <i class="fa fa-play-circle"></i>
+    <img src="4.jpg" style="width: 100%">
+  <iframe class="embed-responsive-item banner-iframe-pc firstEmbed" id="i_frame" allowfullscreen="allowfullscreen" src="" style="width:100%"></iframe>
+</div>
+</div>
+
+<div class="videoken-display-container mySlides slide2">
+  <div class="embedYTVideo embed-banner embed-home embed-responsive embed-responsive-1by1" style="width:100%;position: relative;height: 0px;padding-bottom: 56.25%;overflow: hidden;">
+    <i class="fa fa-play-circle"></i>
+    <img src="1.jpg" style="width: 100%">
+<iframe class=" embed-responsive-item banner-iframe-pc" allowfullscreen="allowfullscreen" src="" style="width:100%"></iframe>
+</div>
+</div>
+
+<div class="videoken-display-container mySlides slide3">
+  <div class="embedYTVideo embed-banner embed-home embed-responsive embed-responsive-1by1" style="width:100%;position: relative;height: 0px;padding-bottom: 56.25%;overflow: hidden;">
+    <i class="fa fa-play-circle"></i>
+    <img src="1.jpg" style="width: 100%">
+<iframe class="embed-responsive-item banner-iframe-pc" allowfullscreen="allowfullscreen" src="" style="width:100%"></iframe>
+</div>
+</div>
+
+<div class="videoken-display-container mySlides slide4">
+  <div class="embedYTVideo embed-banner embed-home embed-responsive embed-responsive-1by1" style="width:100%;position: relative;height: 0px;padding-bottom: 56.25%;overflow: hidden;">
+    <i class="fa fa-play-circle"></i>
+    <img src="2.jpg" style="width: 100%">
+<iframe class="embed-responsive-item banner-iframe-pc" allowfullscreen="allowfullscreen" src="" style="width:100%"></iframe>
+</div>
+</div>
+
+<div class="videoken-display-container mySlides slide5">
+  <div class="embedYTVideo embed-banner embed-home embed-responsive embed-responsive-1by1" style="width:100%;position: relative;height: 0px;padding-bottom: 56.25%;overflow: hidden;">
+    <i class="fa fa-play-circle"></i>
+    <img src="1.jpg" style="width: 100%">
+<iframe class="embed-responsive-item banner-iframe-pc" allowfullscreen="allowfullscreen" src="" style="width:100%"></iframe>
+</div>
+</div>
+
+<button class="videoken-button videoken-display-left videoken-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="videoken-button videoken-display-right videoken-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+<div class="videosParent">
+<div class="videosContainer">
+<span class="videosTitle"> Popular Videos</span> <span class="videosTitle glyphicon glyphicon-chevron-right"></span> &nbsp;<span class="videosTitle PopularCount"></span>
+
+<div class="flexslider">
+              <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                  <ul id="results" class="slides">
+                  
+                </ul>
+              </div>
+</div>
+
+  </div>
+<div class="videosContainer">
+<span class="videosTitle"> Latest Videos</span> <span class="videosTitle glyphicon glyphicon-chevron-right"></span> &nbsp;<span class="videosTitle PopularCount"></span>
+
+<div class="flexslider">
+              <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                  <ul id="results1" class="slides">
+                  
+                </ul>
+              </div>
+</div>
+
+  </div>
+
+</div>
+
+<script>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+$(window).on("load",function(){
+  $(".preLoader").fadeOut();
+})
+</script>
+<script defer src="jquery.flexslider.js"></script>
+
+</body>
+</html>

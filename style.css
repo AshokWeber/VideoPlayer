@@ -1,0 +1,367 @@
+body{
+	background-color: #141523 !important;
+	font-family: Open Sans !important;
+}
+.videosParent{
+	background-color: #141523;
+	padding: 50px 0;
+}
+.videosContainer{
+	margin-left: 5%;
+	padding: 30px 0;
+}
+.videosContainer .videosTitle{
+	font-size: 1.5em;
+	color: #fff;
+	padding-bottom: 1.5em;
+}
+.list-right{
+	position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,1);
+    text-align: center;
+    padding: 0 4px;
+    width: 100%;
+}
+.list-right h3{
+	font-size: 14px;
+	color: #fff;
+	margin: 7px 0;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+#results li, #results1 li{
+	position: relative;
+	width: 260px;
+    margin-right: 20px;
+}
+/*.overlay { z-index: 2; height: 100%; width: 100%; position: absolute; background-color: rgba(0,0,0,0.1); }*/
+.list-left{
+	background-color: rgba(0,0,0,1);
+}
+.flexslider .slides img{
+	opacity: 0.5;
+}
+
+/* Header */
+/* Screen reader only */
+header{
+	margin-bottom: 2em;
+	background-color: #000;
+	padding: 15px 0;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/* Button styling */
+.menu-toggle {
+  display: inline-block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1em;
+  color: #fff;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: #c00;
+}
+
+/*
+ Default styles + Mobile first
+ Offscreen menu style
+*/
+.main-menu {
+  position: absolute;
+  left: -200px;
+  top: 0;
+  height: 100%;
+	transition: left 0.3s ease,
+				      box-shadow 0.3s ease;
+	z-index: 999;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 2.5em 0 0;
+  /* Hide shadow w/ -8px while 'closed' */
+  -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+     -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+          box-shadow: -8px 0 8px rgba(0,0,0,.5);
+  min-height: 100%;
+  width: 200px;
+  background: #1a1a1a;
+}
+
+.main-menu a {
+  display: block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #383838;
+}
+
+.main-menu li:first-child a {
+  border-top: 1px solid #383838;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  background: #333;
+  text-decoration: underline;
+}
+
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+button.btn{
+	padding: 2px 12px;
+	font-weight: bold;
+	background-color: #ff0046;
+}
+/*
+ On small devices, allow it to toggle...
+*/
+/*
+ :target for non-JavaScript
+ aria-expanded="true/false" will be for JavaScript
+*/
+.main-menu:target,
+.main-menu[aria-expanded="true"] {
+  left: 0;
+  outline: none;
+  -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  box-shadow: 3px 0 12px rgba(0,0,0,.25);
+}
+
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+  z-index: 1001;
+}
+
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+  position: relative;
+  z-index: 1000;
+}
+
+/* 
+ We could us `.main-menu:target:after`, but
+ it wouldn't be clickable.
+*/
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop {
+  position: absolute;
+  display: block;  
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: #000;
+  background: rgba(0,0,0,.85);
+  cursor: default;
+}
+
+@supports (position: fixed) {
+  .main-menu,
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop {
+    position: fixed;
+  }
+}
+
+/*
+ Larger screen styling
+ Horizontal menu
+*/
+@media (min-width: 768px) {
+  .menu-toggle,
+  .main-menu .menu-close {
+    display: none;
+  }
+  
+  /* Undo positioning of off-canvas menu */
+  .main-menu {
+    position: relative;
+		left: auto;
+		top: auto;
+		height: auto;
+  }
+  
+  .main-menu ul {
+    display: flex;
+    
+    /* Undo off-canvas styling */
+    padding: 0;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+    height: auto;
+    width: auto;
+    background: none;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .main-menu a {
+    color: #efeaea;
+    border: 0 !important; /* Remove borders from off-canvas styling */
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: none; /* Remove background from off-canvas styling */
+    color: #c00;
+  }
+}
+
+.mySlides{
+	cursor: pointer;
+	background-color: #000;
+}
+
+.embed-responsive-item{
+	z-index: -1;
+}
+
+.fa-play-circle{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: #ff0046;
+    font-size: 5em !important ;
+}
+/*Loader */
+.preLoader{
+	position: fixed;
+	width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sk-folding-cube {
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}
+
+@media (max-width: 992px) {
+.videoken-display-right{
+	right: 0%;
+}
+.videoken-display-left{
+	left: 0%;
+}
+
+}

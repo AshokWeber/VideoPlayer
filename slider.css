@@ -1,0 +1,230 @@
+/* VideoKen.CSS september 2018 by Ashok G */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent;-webkit-text-decoration-skip:objects}
+a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}svg:not(:root){overflow:hidden}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-input-placeholder{color:inherit;opacity:0.54}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.videoken-serif{font-family:serif}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.videoken-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.videoken-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.videoken-table,.videoken-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.videoken-table-all{border:1px solid #ccc}
+.videoken-bordered tr,.videoken-table-all tr{border-bottom:1px solid #ddd}.videoken-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.videoken-table-all tr:nth-child(odd){background-color:#fff}.videoken-table-all tr:nth-child(even){background-color:#f1f1f1}
+.videoken-hoverable tbody tr:hover,.videoken-ul.videoken-hoverable li:hover{background-color:#ccc}.videoken-centered tr th,.videoken-centered tr td{text-align:center}
+.videoken-table td,.videoken-table th,.videoken-table-all td,.videoken-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.videoken-table th:first-child,.videoken-table td:first-child,.videoken-table-all th:first-child,.videoken-table-all td:first-child{padding-left:16px}
+.videoken-btn,.videoken-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.videoken-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.videoken-btn,.videoken-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.videoken-disabled,.videoken-btn:disabled,.videoken-button:disabled{cursor:not-allowed;opacity:0.3}.videoken-disabled *,:disabled *{pointer-events:none}
+.videoken-btn.videoken-disabled:hover,.videoken-btn:disabled:hover{box-shadow:none}
+.videoken-badge,.videoken-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.videoken-badge{border-radius:50%}
+.videoken-ul{list-style-type:none;padding:0;margin:0}.videoken-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.videoken-ul li:last-child{border-bottom:none}
+.videoken-tooltip,.videoken-display-container{position:relative}.videoken-tooltip .videoken-text{display:none}.videoken-tooltip:hover .videoken-text{display:inline-block}
+.videoken-ripple:active{opacity:0.5}.videoken-ripple{transition:opacity 0s}
+.videoken-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.videoken-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.videoken-dropdown-click,.videoken-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.videoken-dropdown-hover:hover .videoken-dropdown-content{display:block}
+.videoken-dropdown-hover:first-child,.videoken-dropdown-click:hover{background-color:#ccc;color:#000}
+.videoken-dropdown-hover:hover > .videoken-button:first-child,.videoken-dropdown-click:hover > .videoken-button:first-child{background-color:#ccc;color:#000}
+.videoken-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.videoken-check,.videoken-radio{width:24px;height:24px;position:relative;top:6px}
+.videoken-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.videoken-bar-block .videoken-dropdown-hover,.videoken-bar-block .videoken-dropdown-click{width:100%}
+.videoken-bar-block .videoken-dropdown-hover .videoken-dropdown-content,.videoken-bar-block .videoken-dropdown-click .videoken-dropdown-content{min-width:100%}
+.videoken-bar-block .videoken-dropdown-hover .videoken-button,.videoken-bar-block .videoken-dropdown-click .videoken-button{width:100%;text-align:left;padding:8px 16px}
+.videoken-main,#main{transition:margin-left .4s}
+.videoken-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.videoken-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.videoken-bar{width:100%;overflow:hidden}.videoken-center .videoken-bar{display:inline-block;width:auto}
+.videoken-bar .videoken-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.videoken-bar .videoken-dropdown-hover,.videoken-bar .videoken-dropdown-click{position:static;float:left}
+.videoken-bar .videoken-button{white-space:normal}
+.videoken-bar-block .videoken-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.videoken-bar-block.videoken-center .videoken-bar-item{text-align:center}.videoken-block{display:block;width:100%}
+.videoken-responsive{display:block;overflow-x:auto}
+.videoken-container:after,.videoken-container:before,.videoken-panel:after,.videoken-panel:before,.videoken-row:after,.videoken-row:before,.videoken-row-padding:after,.videoken-row-padding:before,
+.videoken-cell-row:before,.videoken-cell-row:after,.videoken-clear:after,.videoken-clear:before,.videoken-bar:before,.videoken-bar:after{content:"";display:table;clear:both}
+.videoken-col,.videoken-half,.videoken-third,.videoken-twothird,.videoken-threequarter,.videoken-quarter{float:left;width:100%}
+.videoken-col.s1{width:8.33333%}.videoken-col.s2{width:16.66666%}.videoken-col.s3{width:24.99999%}.videoken-col.s4{width:33.33333%}
+.videoken-col.s5{width:41.66666%}.videoken-col.s6{width:49.99999%}.videoken-col.s7{width:58.33333%}.videoken-col.s8{width:66.66666%}
+.videoken-col.s9{width:74.99999%}.videoken-col.s10{width:83.33333%}.videoken-col.s11{width:91.66666%}.videoken-col.s12{width:99.99999%}
+@media (min-width:601px){.videoken-col.m1{width:8.33333%}.videoken-col.m2{width:16.66666%}.videoken-col.m3,.videoken-quarter{width:24.99999%}.videoken-col.m4,.videoken-third{width:33.33333%}
+.videoken-col.m5{width:41.66666%}.videoken-col.m6,.videoken-half{width:49.99999%}.videoken-col.m7{width:58.33333%}.videoken-col.m8,.videoken-twothird{width:66.66666%}
+.videoken-col.m9,.videoken-threequarter{width:74.99999%}.videoken-col.m10{width:83.33333%}.videoken-col.m11{width:91.66666%}.videoken-col.m12{width:99.99999%}}
+@media (min-width:993px){.videoken-col.l1{width:8.33333%}.videoken-col.l2{width:16.66666%}.videoken-col.l3{width:24.99999%}.videoken-col.l4{width:33.33333%}
+.videoken-col.l5{width:41.66666%}.videoken-col.l6{width:49.99999%}.videoken-col.l7{width:58.33333%}.videoken-col.l8{width:66.66666%}
+.videoken-col.l9{width:74.99999%}.videoken-col.l10{width:83.33333%}.videoken-col.l11{width:91.66666%}.videoken-col.l12{width:99.99999%}}
+.videoken-content{max-width:700px;margin:auto}.videoken-rest{overflow:hidden}
+.videoken-cell-row{display:table;width:100%}.videoken-cell{display:table-cell}
+.videoken-cell-top{vertical-align:top}.videoken-cell-middle{vertical-align:middle}.videoken-cell-bottom{vertical-align:bottom}
+.videoken-hide{display:none!important}.videoken-show-block,.videoken-show{display:block!important}.videoken-show-inline-block{display:inline-block!important}
+@media (max-width:600px){.videoken-modal-content{margin:0 10px;width:auto!important}.videoken-modal{padding-top:30px}
+.videoken-dropdown-hover.videoken-mobile .videoken-dropdown-content,.videoken-dropdown-click.videoken-mobile .videoken-dropdown-content{position:relative}	
+.videoken-hide-small{display:none!important}.videoken-mobile{display:block;width:100%!important}.videoken-bar-item.videoken-mobile,.videoken-dropdown-hover.videoken-mobile,.videoken-dropdown-click.videoken-mobile{text-align:center}
+.videoken-dropdown-hover.videoken-mobile,.videoken-dropdown-hover.videoken-mobile .videoken-btn,.videoken-dropdown-hover.videoken-mobile .videoken-button,.videoken-dropdown-click.videoken-mobile,.videoken-dropdown-click.videoken-mobile .videoken-btn,.videoken-dropdown-click.videoken-mobile .videoken-button{width:100%}}
+@media (max-width:768px){.videoken-modal-content{width:500px}.videoken-modal{padding-top:50px}}
+@media (min-width:993px){.videoken-modal-content{width:900px}.videoken-hide-large{display:none!important}.videoken-sidebar.videoken-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.videoken-hide-medium{display:none!important}}
+@media (max-width:992px){.videoken-sidebar.videoken-collapse{display:none}.videoken-main{margin-left:0!important;margin-right:0!important}}
+.videoken-top,.videoken-bottom{position:fixed;width:100%;z-index:1}.videoken-top{top:0}.videoken-bottom{bottom:0}
+.videoken-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.videoken-display-topleft{position:absolute;left:0;top:0}.videoken-display-topright{position:absolute;right:0;top:0}
+.videoken-display-bottomleft{position:absolute;left:0;bottom:0}.videoken-display-bottomright{position:absolute;right:0;bottom:0}
+.videoken-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.videoken-display-left{position:absolute;top:50%;left:-15%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.videoken-display-right{position:absolute;top:50%;right:-15%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.videoken-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.videoken-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.videoken-display-container:hover .videoken-display-hover{display:block}.videoken-display-container:hover span.videoken-display-hover{display:inline-block}.videoken-display-hover{display:none}
+.videoken-display-position{position:absolute}
+.videoken-circle{border-radius:50%}
+.videoken-round-small{border-radius:2px}.videoken-round,.videoken-round-medium{border-radius:4px}.videoken-round-large{border-radius:8px}.videoken-round-xlarge{border-radius:16px}.videoken-round-xxlarge{border-radius:32px}
+.videoken-row-padding,.videoken-row-padding>.videoken-half,.videoken-row-padding>.videoken-third,.videoken-row-padding>.videoken-twothird,.videoken-row-padding>.videoken-threequarter,.videoken-row-padding>.videoken-quarter,.videoken-row-padding>.videoken-col{padding:0 8px}
+.videoken-container,.videoken-panel{padding:0.01em 16px}.videoken-panel{margin-top:16px;margin-bottom:16px}
+.videoken-code,.videoken-codespan{font-family:Consolas,"courier new";font-size:16px}
+.videoken-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.videoken-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.videoken-card,.videoken-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.videoken-card-4,.videoken-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.videoken-spin{animation:videoken-spin 2s infinite linear}@keyframes videoken-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.videoken-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.videoken-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.videoken-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.videoken-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.videoken-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.videoken-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.videoken-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.videoken-animate-input{transition:width 0.4s ease-in-out}.videoken-animate-input:focus{width:100%!important}
+.videoken-opacity,.videoken-hover-opacity:hover{opacity:0.60}.videoken-opacity-off,.videoken-hover-opacity-off:hover{opacity:1}
+.videoken-opacity-max{opacity:0.25}.videoken-opacity-min{opacity:0.75}
+.videoken-greyscale-max,.videoken-grayscale-max,.videoken-hover-greyscale:hover,.videoken-hover-grayscale:hover{filter:grayscale(100%)}
+.videoken-greyscale,.videoken-grayscale{filter:grayscale(75%)}.videoken-greyscale-min,.videoken-grayscale-min{filter:grayscale(50%)}
+.videoken-sepia{filter:sepia(75%)}.videoken-sepia-max,.videoken-hover-sepia:hover{filter:sepia(100%)}.videoken-sepia-min{filter:sepia(50%)}
+.videoken-tiny{font-size:10px!important}.videoken-small{font-size:12px!important}.videoken-medium{font-size:15px!important}.videoken-large{font-size:18px!important}
+.videoken-xlarge{font-size:24px!important}.videoken-xxlarge{font-size:36px!important}.videoken-xxxlarge{font-size:48px!important}.videoken-jumbo{font-size:64px!important}
+.videoken-left-align{text-align:left!important}.videoken-right-align{text-align:right!important}.videoken-justify{text-align:justify!important}.videoken-center{text-align:center!important}
+.videoken-border-0{border:0!important}.videoken-border{border:1px solid #ccc!important}
+.videoken-border-top{border-top:1px solid #ccc!important}.videoken-border-bottom{border-bottom:1px solid #ccc!important}
+.videoken-border-left{border-left:1px solid #ccc!important}.videoken-border-right{border-right:1px solid #ccc!important}
+.videoken-topbar{border-top:6px solid #ccc!important}.videoken-bottombar{border-bottom:6px solid #ccc!important}
+.videoken-leftbar{border-left:6px solid #ccc!important}.videoken-rightbar{border-right:6px solid #ccc!important}
+.videoken-section,.videoken-code{margin-top:16px!important;margin-bottom:16px!important}
+.videoken-margin{margin:16px!important}.videoken-margin-top{margin-top:16px!important}.videoken-margin-bottom{margin-bottom:16px!important}
+.videoken-margin-left{margin-left:16px!important}.videoken-margin-right{margin-right:16px!important}
+.videoken-padding-small{padding:4px 8px!important}.videoken-padding{padding:8px 16px!important}.videoken-padding-large{padding:12px 24px!important}
+.videoken-padding-16{padding-top:16px!important;padding-bottom:16px!important}.videoken-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.videoken-padding-32{padding-top:32px!important;padding-bottom:32px!important}.videoken-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.videoken-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.videoken-left{float:left!important}.videoken-right{float:right!important}
+.videoken-button:hover{color:#000!important;background-color:#ccc!important}
+.videoken-transparent,.videoken-hover-none:hover{background-color:transparent!important}
+.videoken-hover-none:hover{box-shadow:none!important}
+/* Colors */
+.videoken-amber,.videoken-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.videoken-aqua,.videoken-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.videoken-blue,.videoken-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.videoken-light-blue,.videoken-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.videoken-brown,.videoken-hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.videoken-cyan,.videoken-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.videoken-blue-grey,.videoken-hover-blue-grey:hover,.videoken-blue-gray,.videoken-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.videoken-green,.videoken-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.videoken-light-green,.videoken-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.videoken-indigo,.videoken-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.videoken-khaki,.videoken-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.videoken-lime,.videoken-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.videoken-orange,.videoken-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.videoken-deep-orange,.videoken-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.videoken-pink,.videoken-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.videoken-purple,.videoken-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.videoken-deep-purple,.videoken-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.videoken-red,.videoken-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.videoken-sand,.videoken-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.videoken-teal,.videoken-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.videoken-yellow,.videoken-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.videoken-white,.videoken-hover-white:hover{color:#000!important;background-color:#fff!important}
+.videoken-black,.videoken-hover-black:hover{color:#000!important;background-color:#fff!important}
+.videoken-grey,.videoken-hover-grey:hover,.videoken-gray,.videoken-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.videoken-light-grey,.videoken-hover-light-grey:hover,.videoken-light-gray,.videoken-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.videoken-dark-grey,.videoken-hover-dark-grey:hover,.videoken-dark-gray,.videoken-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.videoken-pale-red,.videoken-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.videoken-pale-green,.videoken-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.videoken-pale-yellow,.videoken-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.videoken-pale-blue,.videoken-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.videoken-text-amber,.videoken-hover-text-amber:hover{color:#ffc107!important}
+.videoken-text-aqua,.videoken-hover-text-aqua:hover{color:#00ffff!important}
+.videoken-text-blue,.videoken-hover-text-blue:hover{color:#2196F3!important}
+.videoken-text-light-blue,.videoken-hover-text-light-blue:hover{color:#87CEEB!important}
+.videoken-text-brown,.videoken-hover-text-brown:hover{color:#795548!important}
+.videoken-text-cyan,.videoken-hover-text-cyan:hover{color:#00bcd4!important}
+.videoken-text-blue-grey,.videoken-hover-text-blue-grey:hover,.videoken-text-blue-gray,.videoken-hover-text-blue-gray:hover{color:#607d8b!important}
+.videoken-text-green,.videoken-hover-text-green:hover{color:#4CAF50!important}
+.videoken-text-light-green,.videoken-hover-text-light-green:hover{color:#8bc34a!important}
+.videoken-text-indigo,.videoken-hover-text-indigo:hover{color:#3f51b5!important}
+.videoken-text-khaki,.videoken-hover-text-khaki:hover{color:#b4aa50!important}
+.videoken-text-lime,.videoken-hover-text-lime:hover{color:#cddc39!important}
+.videoken-text-orange,.videoken-hover-text-orange:hover{color:#ff9800!important}
+.videoken-text-deep-orange,.videoken-hover-text-deep-orange:hover{color:#ff5722!important}
+.videoken-text-pink,.videoken-hover-text-pink:hover{color:#e91e63!important}
+.videoken-text-purple,.videoken-hover-text-purple:hover{color:#9c27b0!important}
+.videoken-text-deep-purple,.videoken-hover-text-deep-purple:hover{color:#673ab7!important}
+.videoken-text-red,.videoken-hover-text-red:hover{color:#f44336!important}
+.videoken-text-sand,.videoken-hover-text-sand:hover{color:#fdf5e6!important}
+.videoken-text-teal,.videoken-hover-text-teal:hover{color:#009688!important}
+.videoken-text-yellow,.videoken-hover-text-yellow:hover{color:#d2be0e!important}
+.videoken-text-white,.videoken-hover-text-white:hover{color:#fff!important}
+.videoken-text-black,.videoken-hover-text-black:hover{color:#000!important}
+.videoken-text-grey,.videoken-hover-text-grey:hover,.videoken-text-gray,.videoken-hover-text-gray:hover{color:#757575!important}
+.videoken-text-light-grey,.videoken-hover-text-light-grey:hover,.videoken-text-light-gray,.videoken-hover-text-light-gray:hover{color:#f1f1f1!important}
+.videoken-text-dark-grey,.videoken-hover-text-dark-grey:hover,.videoken-text-dark-gray,.videoken-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.videoken-border-amber,.videoken-hover-border-amber:hover{border-color:#ffc107!important}
+.videoken-border-aqua,.videoken-hover-border-aqua:hover{border-color:#00ffff!important}
+.videoken-border-blue,.videoken-hover-border-blue:hover{border-color:#2196F3!important}
+.videoken-border-light-blue,.videoken-hover-border-light-blue:hover{border-color:#87CEEB!important}
+.videoken-border-brown,.videoken-hover-border-brown:hover{border-color:#795548!important}
+.videoken-border-cyan,.videoken-hover-border-cyan:hover{border-color:#00bcd4!important}
+.videoken-border-blue-grey,.videoken-hover-border-blue-grey:hover,.videoken-border-blue-gray,.videoken-hover-border-blue-gray:hover{border-color:#607d8b!important}
+.videoken-border-green,.videoken-hover-border-green:hover{border-color:#4CAF50!important}
+.videoken-border-light-green,.videoken-hover-border-light-green:hover{border-color:#8bc34a!important}
+.videoken-border-indigo,.videoken-hover-border-indigo:hover{border-color:#3f51b5!important}
+.videoken-border-khaki,.videoken-hover-border-khaki:hover{border-color:#f0e68c!important}
+.videoken-border-lime,.videoken-hover-border-lime:hover{border-color:#cddc39!important}
+.videoken-border-orange,.videoken-hover-border-orange:hover{border-color:#ff9800!important}
+.videoken-border-deep-orange,.videoken-hover-border-deep-orange:hover{border-color:#ff5722!important}
+.videoken-border-pink,.videoken-hover-border-pink:hover{border-color:#e91e63!important}
+.videoken-border-purple,.videoken-hover-border-purple:hover{border-color:#9c27b0!important}
+.videoken-border-deep-purple,.videoken-hover-border-deep-purple:hover{border-color:#673ab7!important}
+.videoken-border-red,.videoken-hover-border-red:hover{border-color:#f44336!important}
+.videoken-border-sand,.videoken-hover-border-sand:hover{border-color:#fdf5e6!important}
+.videoken-border-teal,.videoken-hover-border-teal:hover{border-color:#009688!important}
+.videoken-border-yellow,.videoken-hover-border-yellow:hover{border-color:#ffeb3b!important}
+.videoken-border-white,.videoken-hover-border-white:hover{border-color:#fff!important}
+.videoken-border-black,.videoken-hover-border-black:hover{border-color:#000!important}
+.videoken-border-grey,.videoken-hover-border-grey:hover,.videoken-border-gray,.videoken-hover-border-gray:hover{border-color:#9e9e9e!important}
+.videoken-border-light-grey,.videoken-hover-border-light-grey:hover,.videoken-border-light-gray,.videoken-hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.videoken-border-dark-grey,.videoken-hover-border-dark-grey:hover,.videoken-border-dark-gray,.videoken-hover-border-dark-gray:hover{border-color:#616161!important}
+.videoken-border-pale-red,.videoken-hover-border-pale-red:hover{border-color:#ffe7e7!important}.videoken-border-pale-green,.videoken-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.videoken-border-pale-yellow,.videoken-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.videoken-border-pale-blue,.videoken-hover-border-pale-blue:hover{border-color:#e7ffff!important}
