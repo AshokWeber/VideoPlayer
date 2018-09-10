@@ -35,7 +35,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .videoken-hoverable tbody tr:hover,.videoken-ul.videoken-hoverable li:hover{background-color:#ccc}.videoken-centered tr th,.videoken-centered tr td{text-align:center}
 .videoken-table td,.videoken-table th,.videoken-table-all td,.videoken-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
 .videoken-table th:first-child,.videoken-table td:first-child,.videoken-table-all th:first-child,.videoken-table-all td:first-child{padding-left:16px}
-.videoken-btn,.videoken-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.videoken-btn,.videoken-button{border:none;display:inline-block;width:3em;height:3em;border-radius:100%;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
 .videoken-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
 .videoken-btn,.videoken-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
 .videoken-disabled,.videoken-btn:disabled,.videoken-button:disabled{cursor:not-allowed;opacity:0.3}.videoken-disabled *,:disabled *{pointer-events:none}
@@ -78,7 +78,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 @media (min-width:993px){.videoken-col.l1{width:8.33333%}.videoken-col.l2{width:16.66666%}.videoken-col.l3{width:24.99999%}.videoken-col.l4{width:33.33333%}
 .videoken-col.l5{width:41.66666%}.videoken-col.l6{width:49.99999%}.videoken-col.l7{width:58.33333%}.videoken-col.l8{width:66.66666%}
 .videoken-col.l9{width:74.99999%}.videoken-col.l10{width:83.33333%}.videoken-col.l11{width:91.66666%}.videoken-col.l12{width:99.99999%}}
-.videoken-content{max-width:700px;margin:auto}.videoken-rest{overflow:hidden}
+.videoken-content{width:50%;margin:auto}.videoken-rest{overflow:hidden}
 .videoken-cell-row{display:table;width:100%}.videoken-cell{display:table-cell}
 .videoken-cell-top{vertical-align:top}.videoken-cell-middle{vertical-align:middle}.videoken-cell-bottom{vertical-align:bottom}
 .videoken-hide{display:none!important}.videoken-show-block,.videoken-show{display:block!important}.videoken-show-inline-block{display:inline-block!important}
@@ -95,8 +95,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .videoken-display-topleft{position:absolute;left:0;top:0}.videoken-display-topright{position:absolute;right:0;top:0}
 .videoken-display-bottomleft{position:absolute;left:0;bottom:0}.videoken-display-bottomright{position:absolute;right:0;bottom:0}
 .videoken-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
-.videoken-display-left{position:absolute;top:50%;left:-15%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
-.videoken-display-right{position:absolute;top:50%;right:-15%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.videoken-display-left{position:absolute;top:50%;left:-7%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.videoken-display-right{position:absolute;top:50%;right:-7%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
 .videoken-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
 .videoken-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
 .videoken-display-container:hover .videoken-display-hover{display:block}.videoken-display-container:hover span.videoken-display-hover{display:inline-block}.videoken-display-hover{display:none}
