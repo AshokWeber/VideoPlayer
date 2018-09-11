@@ -94,60 +94,24 @@ var id0, id1, id2, id3, id4, id5;
         type: "GET",
         url: "type1.json",
         success: function(result) {
-            for (var i = 0; i < result.length; i++) {
-                var img_num = result[i];
+                var img_num = result[0];
                 console.log(result[1]);
                 id1 = img_num.id;
                 img_url = img_num.url;
-                if (i == 0) {
-                    id0 = id1;
                     $(".slide1 img").attr("src", 'https://i.ytimg.com/vi/' + result[0].id + '/maxresdefault.jpg');
-                } else if (i == 1) {
-                    $(".slide2 img").attr("src", 'https://i.ytimg.com/vi/' + result[1].id + '/maxresdefault.jpg');
-                    id2 = id1;
-                } else if (i == 2) {
-                    id3 = id1;
-                    $(".slide3 img").attr("src", 'https://i.ytimg.com/vi/' + result[2].id + '/maxresdefault.jpg');
-
-                } else if (i == 3) {
-                    id4 = id1;
-                    $(".slide4 img").attr("src", 'https://i.ytimg.com/vi/' + result[3].id + '/maxresdefault.jpg');
-
-                } else if (i == 4) {
-                    id5 = id1;
-                    $(".slide5 img").attr("src", 'https://i.ytimg.com/vi/' + result[4].id + '/maxresdefault.jpg');
-                }
-            }
-            count1++;
         }
     });
 })();
+$(window).on("load",function(){
+    $(".embedBanner").attr('src', 'https://stage.videoken.com/embed/?videoID=' + id1 + '&autoplay=1');
+});
+
 $(document).ready(function() {
     $(".slide1").click(function() {
         $(".slide1 img, .fa-play").hide();
-        $(this).find("iframe").attr('src', 'https://stage.videoken.com/embed/?videoID=' + id0 + '&autoplay=1');
-        $(".embed-responsive-item").css("z-index", "1");
-    });
-
-    $(".slide2").click(function() {
-        $(".slide2 img, .fa-play").hide();
-        $(this).find("iframe").attr('src', 'https://stage.videoken.com/embed/?videoID=' + id2 + '&autoplay=1');
-        $(".embed-responsive-item").css("z-index", "9");
-    });
-    $(".slide3").click(function() {
-        $(".slide3 img, .fa-play").hide();
-        $(this).find("iframe").attr('src', 'https://stage.videoken.com/embed/?videoID=' + id3 + '&autoplay=1');
-        $(".embed-responsive-item").css("z-index", "9");
-    });
-    $(".slide4").click(function() {
-        $(".slide4 img, .fa-play").hide();
-        $(this).find("iframe").attr('src', 'https://stage.videoken.com/embed/?videoID=' + id4 + '&autoplay=1');
-        $(".embed-responsive-item").css("z-index", "9");
-    });
-    $(".slide5").click(function() {
-        $(".slide5 img, .fa-play").hide();
-        $(this).find("iframe").attr('src', 'https://stage.videoken.com/embed/?videoID=' + id5 + '&autoplay=1');
-        $(".embed-responsive-item").css("z-index", "9");
+        $(".embed-responsive-item, .embed-banner").css("z-index", "5");
+        
+        //$('.embed-banner').html('<iframe class="banner-iframe-pc embedBanner" allowfullscreen="allowfullscreen" src=https://stage.videoken.com/embed/?videoID=' + id1 + '&autoplay=1 frameBorder="0"></iframe>');
     });
     $(".videoken-button").click(function() {
         $(".embed-responsive-item").css("z-index", "-1");
@@ -157,8 +121,15 @@ $(document).ready(function() {
     });
 });
 $(document).ready(function() {
-    $("#results li, #results1 li, #results2 li").click(function() {
-        var get_href = $(this).attr("href");
+    $("#results2 li").click(function(){
+        $(".slide1 img, .fa-play").hide();
+        let get_href = $(this).attr("href");
+        $(".embed-responsive-item").css("z-index", "2");
+        $(".embedBanner").attr("src",'https://stage.videoken.com/embed/?videoID=' + get_href + '&autoplay=1');
+
+    });
+    $("#results li, #results1 li").click(function() {
+        let get_href = $(this).attr("href");
         $("#myModal").show();
         $('.embedYTVideoModal').html('<iframe class="banner-iframe-pc" allowfullscreen="allowfullscreen" src=https://stage.videoken.com/embed/?videoID=' + get_href + '&autoplay=1 frameBorder="0"></iframe>');
     });
